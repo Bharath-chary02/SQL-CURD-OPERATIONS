@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Basic reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+        body {
+            background: #F1EFEC;
+            color: #030303;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: #D4C9BE;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(3,3,3,0.08);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            background: #8A5A2B;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(3,3,3,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Total Users: <%= count %></h1>
+        <a href="/user" class="btn">All Users</a>
+        <a href="/user/add" class="btn">Add User</a>
+    </div>
+</body>
+</html>

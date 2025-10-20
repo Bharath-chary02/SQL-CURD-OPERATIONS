@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit User</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+    body {
+      background: #F1EFEC;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      color: #030303;
+    }
+
+    .container {
+      background: #D4C9BE;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(3,3,3,0.08);
+      max-width: 700px;
+      width: 100%;
+    }
+
+    h1 { margin-bottom: 24px; text-align: center; }
+
+    label { display: block; margin: 12px 0 6px; font-weight: bold; }
+    input, textarea { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #8A5A2B;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+      border: none;
+    }
+
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(3,3,3,0.1); }
+
+    .top-btn { text-align: center; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-btn">
+      <a href="/" class="btn">Home</a>
+      <a href="/user" class="btn">All Users</a>
+    </div>
+
+    <h1>Edit User: <%= user.email %></h1>
+    <form method="post" action="/user/<%= user.userId %>?_method=PATCH">
+      <label for="username">Username</label>
+      <textarea id="username" name="username" required><%= user.username %></textarea>
+
+      <label for="password">Enter Password to Confirm</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+      <button type="submit" class="btn">Update</button>
+    </form>
+  </div>
+</body>
+</html>
