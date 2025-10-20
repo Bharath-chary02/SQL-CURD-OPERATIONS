@@ -37,7 +37,7 @@ The goal was to practice **frontend + backend integration**, **database operatio
 ###1️⃣  Clone this repository  
    ```bash
    git clone https://github.com/your-username/SQL-CURD-OPERATIONS.git
-   cd user-management-system
+   cd SQL-CURD-OPERATIONS
 
 ###2️⃣ Install dependencies
    npm install
