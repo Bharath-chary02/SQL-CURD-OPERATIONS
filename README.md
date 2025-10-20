@@ -1,11 +1,11 @@
-# 🧩 User Management System  
+# 🧩 User Management System - SQL CURD OPERATIONS  
 _A Full-Stack CRUD Project built using Node.js, Express, EJS, and MySQL_
 
 ---
 
 ## 🚀 Project Overview  
 This project is a simple yet powerful **User Management System** that allows you to **Add, Edit, Delete, and View Users**.  
-It’s built as part of my learning journey in the **Apna College Sigma 8.0 Batch** under the guidance of **Shradha Ma’am**.
+It’s built as part of my learning journey in the **Apna College Sigma Batch** under the guidance of **Shradha Ma’am**.
 
 The goal was to practice **frontend + backend integration**, **database operations**, and **dynamic rendering using EJS**.
 
